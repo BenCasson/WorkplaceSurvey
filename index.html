@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="forum-box">
+            <header id="header">
+                <h1 id="title">Workplace Survey</h1>
+                <p id="description">Below is a survey about your current and ideal work environment</p>
+            </header>
+            <main id="survey-stuff">
+                <form id="survey-form">
+                    <div class="form-group" id="name-div">
+                        <label for="name" class="label" id="name-label">Name</label><br><br>
+                        <input type="text" class="input" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group" id="email-div">
+                        <label for="email" class="label" id="email-label">Email</label><br><br>
+                        <input type="email" class="input" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group" id="age-div">
+                        <label for="number" class="label" id="number-label">Age <span class="span">(optional)</span></label><br><br>
+                        <input type="number" class="input" id="number" name="number" min="14" max="100" placeholder="Enter your age">
+                    </div>
+                    <div class="form-group">
+                        <p id="current-location">Which option best describes your <span class="italic">current</span> workplace?</p>
+                        <select id="dropdown" name="current-workplace" class="input" required>
+                            <option disabled selected value>Select current workplace</option>
+                            <option value="commercial">Commercial (ex: office, retail)</option>
+                            <option value="residential">Residential (ex: home office)</option>
+                            <option value="industrial">Industrial (ex: manufacturing, warehouse)</option>
+                            <option value="infrastructure">Infrastructure (ex: power plant)</option>
+                            <option value="agricultural">Agricultural (ex: farmhouse, stable)</option>
+                            <option value="educational">Educational (ex: school)</option>
+                            <option value="civic">Civic (ex: library, museum)</option>
+                            <option value="religious">Religious (ex: church, temple, mosque)</option>
+                            <option value="government">Government (ex: city hall, fire station)</option>
+                            <option value="military">Military (ex: military base)</option>
+                            <option value="transportation">Transportation (ex: airport terminal)</option>
+                            <option value="preferNo">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p id="ideal-location">Which option best describes your <span class="italic">ideal</span> workplace?</p>
+                        <select id="dropdown-2" name="ideal-workplace" class="input" required>
+                            <option disabled selected value>Select ideal workplace</option>
+                            <option value="commercial">Commercial (ex: office, retail)</option>
+                            <option value="residential">Residential (ex: home office)</option>
+                            <option value="industrial">Industrial (ex: manufacturing, warehouse)</option>
+                            <option value="infrastructure">Infrastructure (ex: power plant)</option>
+                            <option value="agricultural">Agricultural (ex: farmhouse, stable)</option>
+                            <option value="educational">Educational (ex: school)</option>
+                            <option value="civic">Civic (ex: library, museum)</option>
+                            <option value="religious">Religious (ex: church, temple, mosque)</option>
+                            <option value="government">Government (ex: city hall, fire station)</option>
+                            <option value="military">Military (ex: military base)</option>
+                            <option value="transportation">Transportation (ex: airport terminal)</option>
+                            <option value="preferNo">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="job-value">
+                        <p id="most-valued">What do you value most in a job? <span class="span">(only choose 3)</span></p>
+                        <input class="single-checkbox" type="checkbox" name="value" value="value"> Team atmosphere<hr>
+                        <input class="single-checkbox" type="checkbox" name="value" value="value"> Job security<hr>
+                        <input class="single-checkbox" type="checkbox" name="value" value="value"> Competitive salary<hr>
+                        <input class="single-checkbox" type="checkbox" name="value" value="value"> Perks and benefits<hr>
+                        <input class="single-checkbox" type="checkbox" name="value" value="value"> Flexible schedule<hr>
+                        <input class="single-checkbox" type="checkbox" name="value" value="value"> Effective management<hr>
+                        <input class="single-checkbox" type="checkbox" name="value" value="value"> Interesting work<hr>
+                        <input class="single-checkbox" type="checkbox" name="value" value="value"> Promotion opportunities<hr>
+                    </div>
+                    <div class="form-group">
+                        <p id="hours">On average, how many hours a week do you work? <span class="span">(including overtime)</span></p>
+                        <label><input type="radio" class="input-radio" name="hours" value="fewer-than-10">Fewer than 10</label><hr>
+                        <label><input type="radio" class="input-radio" name="hours" value="10-20">10-20</label><hr>
+                        <label><input type="radio" class="input-radio" name="hours" value="21-30">21-30</label><hr>
+                        <label><input type="radio" class="input-radio" name="hours" value="31-40">31-40</label><hr>
+                        <label><input type="radio" class="input-radio" name="hours" value="41-50">41-50</label><hr>
+                        <label><input type="radio" class="input-radio" name="hours" value="51-60">51-60</label><hr>
+                        <label><input type="radio" class="input-radio" name="hours" value="61-70">61-70</label><hr>
+                        <label><input type="radio" class="input-radio" name="hours" value="71-80">71-80</label><hr>
+                        <label><input type="radio" class="input-radio" name="hours" value="81-90">81-90</label><hr>
+                        <label><input type="radio" class="input-radio" name="hours" value="91-100">91-100</label><hr>
+                        <label><input type="radio" class="input-radio" name="hours" value="More than 100">More than 100</label><br>
+                    </div>
+                    <div class="form-group" id="wage-div">
+                        <label for="wage-input" class="label" id="wage-label">What is your current hourly wage? <span class="span">(optional)</span></label><hr>
+                        <span id="dollar-sign">$ </span><input type="number" class="input" id="wage-input" name="wage-input" min="0" step=".01" placeholder="Enter your hourly wage">
+                    </div>
+                    <div class="form-group">
+                        <p id="comments-question">Have a comment or additional information?</p>
+                        <textarea id="comments" class="additional-info" name="comment" placeholder="Enter your comments and additional information here..."></textarea>
+                    </div>
+                    <div class="form-group" id="submit-div">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </main>
+            </div>
+        <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>-->
+    </body>
+</html>
